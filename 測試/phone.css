@@ -1,0 +1,91 @@
+
+/* ============ 手機版（≤ 768px） ============ */
+@media (max-width: 768px){
+
+  /* Header：白底黑字、固定在頂端（尺寸縮小） */
+  :root{ --header-h: 64px; }
+  .site-header{ padding: 0 14px; }
+  .brand{ width: 180px; height: 48px; }
+  .site-header nav ul{
+    gap: 14px;
+    flex-wrap: wrap;                 /* 空間不夠時換行 */
+    justify-content: flex-end;
+  }
+  .site-header nav a{
+    font-size: 16px;
+    padding: 8px 6px;
+  }
+
+  /* 首屏簡介區 */
+  .about{ min-height: 70vh; padding: 48px 16px; }
+  .about h2{ font-size: 26px; }
+  .about p{ font-size: 18px; }
+
+  /* 歷代人物：改為單欄、置中；間距縮小 */
+  .history{
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding-inline: 16px;            /* 邊緣＝間距 */
+    justify-items: center;
+  }
+  .person-card{
+    --card-w: min(92vw, 380px);      /* 卡片寬度隨螢幕縮放 */
+    max-height: 320px;               /* 略矮一些（也可刪掉這行） */
+    border-radius: 10px;
+    box-shadow: 0 8px 18px rgba(0,0,0,.14);
+  }
+  .person-card .caption{
+    font-size: 15px;
+    padding: 10px 12px;
+  }
+
+  /* 結語：圖上文下 */
+  .conclusion{
+    grid-template-columns: 1fr;
+    row-gap: 12px;
+    padding-block: 16px;
+    width: min(94%, 1080px);
+  }
+  .conclusion-media{ justify-self: center; }
+  .conclusion-media img{ max-width: 82vw; }
+  .conclusion .tagline{ font-size: 13px; }
+  .conclusion-text{ gap: 8px; }
+
+  /* 聯絡表單區 */
+  #contact{ padding-block: 12px; }
+  #contact h2{ font-size: 22px; }
+  #contact > p:first-of-type{ font-size: 14px; margin-bottom: 14px; }
+
+  .form{ width: 92%; margin: 8px auto 22px; }
+  .form input, .form textarea, .form button{
+    font-size: 16px; padding: 12px;
+  }
+  .form textarea{ min-height: 120px; }
+
+  /* 社群圓形按鈕（縮小） */
+  .social{ gap: 16px; padding: 20px 0 36px; }
+  .social .icon{ width: 64px; height: 64px; font-size: 26px; }
+
+  /* Footer（置中、允許換行） */
+  .site-footer{ padding: 14px 0; }
+  .footer-line{
+    flex-wrap: wrap;
+    gap: 10px 16px;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-info{ gap: 16px; flex-wrap: wrap; }
+  .footer-title, .footer-info p{ font-size: 13px; }
+}
+
+/* ============ 更小的手機（≤ 480px） ============ */
+@media (max-width: 480px){
+  .brand{ width: 150px; height: 44px; }
+  .site-header nav ul{ gap: 10px; }
+  .site-header nav a{ font-size: 15px; }
+
+  .person-card{ --card-w: 88vw; max-height: 300px; }
+
+  .social .icon{ width: 56px; height: 56px; font-size: 24px; }
+}
