@@ -1,3 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800;900&display=swap');
+/* 字體變數：書法優先，後面是各系統常見楷體做備援 */
+:root{
+  /* mac / Windows / 其它系統的中文備援字體，確保全覆蓋 */
+  --font-ui: "Noto Sans TC",
+             "PingFang TC", "Heiti TC", "Microsoft JhengHei",
+             "Noto Sans CJK TC", /* 思源黑體 */
+             system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+}
+/* 全站用 Noto Serif TC（襯線／明體，跟預設黑體差很多） */
+html, body{
+  font-family: "Noto Serif TC", "Noto Sans TC",
+               "PingFang TC", "Microsoft JhengHei",
+               "Noto Sans CJK TC", serif !important;
+  line-height: 1.8;
+  letter-spacing: .01em;
+}
+/* 導覽列的粗細微調（Noto Serif 也有粗體可用） */
+.site-header nav a{ font-weight: 700; }
+
+
 /*全域樣式設定 避免排版跑掉*/
 *{
     margin: 0;
@@ -363,3 +384,4 @@ section[id]{ scroll-margin-top: calc(var(--header-h) + 8px); }
   }
 
 }
+
