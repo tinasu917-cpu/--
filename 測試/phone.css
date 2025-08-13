@@ -18,8 +18,8 @@
 
   /* 首屏簡介區 */
   .about{ min-height: 72vh; padding: 52px 18px; }
-  .about h2{ font-size: 34px; }
-  .about p{  font-size: 21px; line-height: 1.9; }
+  .about h2{ font-size: 38px; line-height: 1.25; }    /* 34 → 38 */
+  .about p { font-size: 23px; line-height: 1.95; }    /* 21 → 23 */
 
   /* 歷代人物：單欄 */
   .history{
@@ -51,8 +51,9 @@
   .conclusion-media img{ max-width: 86vw; }      /* 82 → 86 */
   .conclusion .tagline{ font-size: 15px; }       /* 13 → 15 */
   .conclusion-text{ gap: 10px; }
-  .conclusion-text p{ font-size: 19px; line-height: 1.95; }
-  .conclusion .tagline{ font-size: 16px; }
+  .conclusion-text p{ font-size: 21px; line-height: 2.0; } /* 19 → 21 */
+  .conclusion .tagline{ font-size: 17px; line-height: 1.6; } /* 合併為 17px */
+
 
   /* 聯絡表單區 */
   #contact{ padding-block: 14px; }
@@ -88,16 +89,16 @@
   .site-header nav ul{ gap: 12px; }
   .site-header nav a{ font-size: 17px; }    /* 15 → 17 */
 
-  .about h2{ font-size: 32px; }
-  .about p{  font-size: 20px; }
+   .about h2{ font-size: 34px; }                       /* 32 → 34 */
+  .about p { font-size: 22px; }                       /* 20 → 22 */
 
   .person-card{ --card-w: 92vw; max-height: 320px; } /* 88vw/300 → 92vw/320 */
   .person-card .caption{ font-size: 16px; }
 
   .conclusion-media img{ max-width: 90vw; }
   .conclusion .tagline{ font-size: 14px; }
-  .conclusion-text p{ font-size: 18.5px; }
-  .conclusion .tagline{ font-size: 15.5px; }
+  .conclusion-text p{ font-size: 20px; line-height: 1.95; } /* 18.5 → 20 */
+  .conclusion .tagline{ font-size: 16.5px; }                /* 合併為 16.5px */
 
   #contact h2{ font-size: 23px; }
   #contact > p:first-of-type{ font-size: 15px; }
