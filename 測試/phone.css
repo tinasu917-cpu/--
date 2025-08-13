@@ -18,8 +18,8 @@
 
   /* 首屏簡介區 */
   .about{ min-height: 72vh; padding: 52px 18px; }
-  .about h2{ font-size: 30px; }     /* 26 → 30 */
-  .about p{ font-size: 20px; }      /* 18 → 20 */
+  .about h2{ font-size: 60px; }     /* 26 → 30 */
+  .about p{ font-size: 40px; }      /* 18 → 20 */
 
   /* 歷代人物：單欄 */
   .history{
@@ -105,3 +105,4 @@
   .social .icon{ width: 64px; height: 64px; font-size: 26px; } /* 保持清楚 */
   .footer-title, .footer-info p{ font-size: 14.5px; }
 }
+
