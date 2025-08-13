@@ -94,7 +94,7 @@ section[id]{ scroll-margin-top: calc(var(--header-h) + 8px); }
 /*歷代人物設定*/
 /* 容器：三欄並排，標題佔滿一列 */
 .history{
-  ---gap: 24px;                                   /* 卡片間距 */
+  --gap: 24px;                                   /* 卡片間距 */
   --card-w: clamp(260px, 28vw, 360px);           /* 卡片寬度：隨螢幕縮放 */
   --card-ratio: 3 / 4;                           /* ✅ 你喜歡的比例（修長） */
 
@@ -361,4 +361,5 @@ section[id]{ scroll-margin-top: calc(var(--header-h) + 8px); }
     justify-self: center;     /* 圖片置中 */
     max-width: 460px;         /* 可依需要調整 */
   }
+
 }
