@@ -96,7 +96,7 @@ section[id]{ scroll-margin-top: calc(var(--header-h) + 8px); }
 /* 半透明遮罩：絕對定位 + 四邊貼齊 */
 .about::before{
   content:""; position:absolute; inset:0;
-  background: rgba(0,0,0,.35);
+  background: rgba(0,0,0,.45);
 }
 .about > *{ position:relative; z-index:1; margin:12px 0; }
 .about > :last-child{ margin-bottom:0; }  /* 保險 */
@@ -384,5 +384,6 @@ section[id]{ scroll-margin-top: calc(var(--header-h) + 8px); }
   }
 
 }
+
 
 
