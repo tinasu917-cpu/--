@@ -2,90 +2,106 @@
 /* ============ 手機版（≤ 768px） ============ */
 @media (max-width: 768px){
 
-  /* Header：白底黑字、固定在頂端（尺寸縮小） */
-  :root{ --header-h: 64px; }
-  .site-header{ padding: 0 14px; }
-  .brand{ width: 180px; height: 48px; }
+  /* Header：白底黑字、固定在頂端（尺寸微放大） */
+  :root{ --header-h: 68px; }
+  .site-header{ padding: 0 16px; }
+  .brand{ width: 190px; height: 52px; }
   .site-header nav ul{
-    gap: 14px;
-    flex-wrap: wrap;                 /* 空間不夠時換行 */
+    gap: 16px;
+    flex-wrap: wrap;
     justify-content: flex-end;
   }
   .site-header nav a{
-    font-size: 16px;
-    padding: 8px 6px;
+    font-size: 18px;         /* 16 → 18 */
+    padding: 10px 8px;
   }
 
   /* 首屏簡介區 */
-  .about{ min-height: 70vh; padding: 48px 16px; }
-  .about h2{ font-size: 26px; }
-  .about p{ font-size: 18px; }
+  .about{ min-height: 72vh; padding: 52px 18px; }
+  .about h2{ font-size: 30px; }     /* 26 → 30 */
+  .about p{ font-size: 20px; }      /* 18 → 20 */
 
-  /* 歷代人物：改為單欄、置中；間距縮小 */
+  /* 歷代人物：單欄 */
   .history{
     width: 100%;
     grid-template-columns: 1fr;
-    gap: 16px;
-    padding-inline: 16px;            /* 邊緣＝間距 */
+    gap: 18px;
+    padding-inline: 18px;
     justify-items: center;
   }
   .person-card{
-    --card-w: min(92vw, 380px);      /* 卡片寬度隨螢幕縮放 */
-    max-height: 320px;               /* 略矮一些（也可刪掉這行） */
+    --card-w: min(94vw, 400px);     /* 92vw, 380px → 稍放大 */
+    max-height: 336px;              /* 320 → 336 */
     border-radius: 10px;
     box-shadow: 0 8px 18px rgba(0,0,0,.14);
   }
   .person-card .caption{
-    font-size: 15px;
-    padding: 10px 12px;
+    font-size: 17px;                /* 15 → 17 */
+    padding: 12px 14px;
   }
 
   /* 結語：圖上文下 */
   .conclusion{
     grid-template-columns: 1fr;
-    row-gap: 12px;
-    padding-block: 16px;
+    row-gap: 14px;
+    padding-block: 18px;
     width: min(94%, 1080px);
   }
   .conclusion-media{ justify-self: center; }
-  .conclusion-media img{ max-width: 82vw; }
-  .conclusion .tagline{ font-size: 13px; }
-  .conclusion-text{ gap: 8px; }
+  .conclusion-media img{ max-width: 86vw; }      /* 82 → 86 */
+  .conclusion .tagline{ font-size: 15px; }       /* 13 → 15 */
+  .conclusion-text{ gap: 10px; }
+  .conclusion-text p{ font-size: 17px; line-height: 1.85; } /* 新增字級 */
 
   /* 聯絡表單區 */
-  #contact{ padding-block: 12px; }
-  #contact h2{ font-size: 22px; }
-  #contact > p:first-of-type{ font-size: 14px; margin-bottom: 14px; }
+  #contact{ padding-block: 14px; }
+  #contact h2{ font-size: 24px; }                /* 22 → 24 */
+  #contact > p:first-of-type{ font-size: 16px; margin-bottom: 16px; } /* 14 → 16 */
 
-  .form{ width: 92%; margin: 8px auto 22px; }
+  .form{ width: 94%; margin: 10px auto 24px; }
   .form input, .form textarea, .form button{
-    font-size: 16px; padding: 12px;
+    font-size: 18px;               /* 16 → 18 */
+    padding: 14px 16px;
   }
-  .form textarea{ min-height: 120px; }
+  .form textarea{ min-height: 130px; }
 
-  /* 社群圓形按鈕（縮小） */
-  .social{ gap: 16px; padding: 20px 0 36px; }
-  .social .icon{ width: 64px; height: 64px; font-size: 26px; }
+  /* 社群圓形按鈕（放大） */
+  .social{ gap: 18px; padding: 22px 0 40px; }
+  .social .icon{ width: 72px; height: 72px; font-size: 30px; } /* 64/26 → 72/30 */
 
-  /* Footer（置中、允許換行） */
-  .site-footer{ padding: 14px 0; }
+  /* Footer（字級放大、可換行） */
+  .site-footer{ padding: 16px 0; }
   .footer-line{
     flex-wrap: wrap;
-    gap: 10px 16px;
+    gap: 12px 18px;
     justify-content: center;
     align-items: center;
   }
-  .footer-info{ gap: 16px; flex-wrap: wrap; }
-  .footer-title, .footer-info p{ font-size: 13px; }
+  .footer-info{ gap: 18px; flex-wrap: wrap; }
+  .footer-title, .footer-info p{ font-size: 15px; } /* 13 → 15 */
 }
 
 /* ============ 更小的手機（≤ 480px） ============ */
 @media (max-width: 480px){
-  .brand{ width: 150px; height: 44px; }
-  .site-header nav ul{ gap: 10px; }
-  .site-header nav a{ font-size: 15px; }
+  .brand{ width: 165px; height: 48px; }     /* 150×44 → 165×48 */
+  .site-header nav ul{ gap: 12px; }
+  .site-header nav a{ font-size: 17px; }    /* 15 → 17 */
 
-  .person-card{ --card-w: 88vw; max-height: 300px; }
+  .about h2{ font-size: 28px; }             /* 26 → 28 */
+  .about p{ font-size: 19px; }              /* 18 → 19 */
 
-  .social .icon{ width: 56px; height: 56px; font-size: 24px; }
+  .person-card{ --card-w: 92vw; max-height: 320px; } /* 88vw/300 → 92vw/320 */
+  .person-card .caption{ font-size: 16px; }
+
+  .conclusion-media img{ max-width: 90vw; }
+  .conclusion .tagline{ font-size: 14px; }
+  .conclusion-text p{ font-size: 16.5px; }
+
+  #contact h2{ font-size: 23px; }
+  #contact > p:first-of-type{ font-size: 15px; }
+
+  .form input, .form textarea, .form button{ font-size: 17px; }
+
+  .social .icon{ width: 64px; height: 64px; font-size: 26px; } /* 保持清楚 */
+  .footer-title, .footer-info p{ font-size: 14.5px; }
 }
