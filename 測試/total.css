@@ -86,7 +86,7 @@ section[id]{ scroll-margin-top: calc(var(--header-h) + 8px); }
     background-color: cover;
     background-position: center;
     display: flow-root;
-    background-image: url("img/簡介.jpg");
+    background-image: url("img/背景.jpg");
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -384,4 +384,5 @@ section[id]{ scroll-margin-top: calc(var(--header-h) + 8px); }
   }
 
 }
+
 
