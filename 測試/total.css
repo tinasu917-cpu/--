@@ -87,6 +87,9 @@ section[id]{ scroll-margin-top: calc(var(--header-h) + 8px); }
     background-position: center;
     display: flow-root;
     background-image: url("img/背景.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% var(--aboutY, 60%);
+    background-size: cover;      /* ← 原本寫成 background-color: cover; 把它改成這行 */
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -384,6 +387,7 @@ section[id]{ scroll-margin-top: calc(var(--header-h) + 8px); }
   }
 
 }
+
 
 
 
